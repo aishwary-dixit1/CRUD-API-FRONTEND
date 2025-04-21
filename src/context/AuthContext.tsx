@@ -38,6 +38,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
       console.log("done -> ", response.data);
       return true
     } catch (err) {
+      console.log("error -> ", err);
       setUser(null)
       return false
     } finally {
